@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Physical Theraphy</title>
+    <link rel="shortcut icon" href="./Images/Favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- <script
+      src="https://kit.fontawesome.com/487afe8f0d.js"
+      crossorigin="anonymous"
+    ></script> -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <nav>
+      <div class="logo">
+        <h1>Physical<span>Therapy.</span></h1>
+      </div>
+
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32"
+          viewBox="0 -960 960 960"
+          width="32"
+          fill="#e3e3e3"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </label>
+
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32"
+            viewBox="0 -960 960 960"
+            width="32"
+            fill="#e3e3e3"
+          >
+            <path
+              d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+            />
+          </svg>
+        </label>
+
+        <a class="links" href="#">Home</a>
+        <!-- <a href="#" class="linkss">Home</a> -->
+        <a href="#what" class="links">Services</a>
+        <a href="#reviews" class="links">Reviews</a>
+        <a href="#contact" class="links">Contact</a>
+      </div>
+    </nav>
+    <!-- <div class="menu_bar">
+        <a class="home-link" href="#"
+          ><h1 class="logo">Serenity<span>Massage</span></h1></a
+        >
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li>
+            <a href="#services">Services <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">
+              <ul>
+                <li><a href="#">Swedish Massage</a></li>
+                <li><a href="#">Deep Tissue Massage</a></li>
+                <li><a href="#">Aromatherapy Massage</a></li>
+                <li><a href="#">Hot Stone Massage</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div> -->
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="overlay"></div>
+      <div class="text-box">
+        <div class="fixed-text">
+          <h1>We offer personalized massage treatment</h1>
+        </div>
+        <!-- <p>Discover the perfect massage tailored for you</p> -->
+        <div class="dynamic-text">
+          <span id="typed-text"></span><span class="cursor">|</span>
+          <!-- <div class="click">
+            <button>Get Started</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Services Section -->
+    <section class="services-title" id="what">
+      <hr />
+      <h2>What We Offer</h2>
+    </section>
+
+    <section class="services">
+      <div class="services-container">
+        <div class="service-card" id="swedish">
+          <img
+            src="./Images/240_F_807427020_6tqD1vZuyMf4jGox3oGxwknXWRSrGeNv.jpg"
+            alt="Swedish Massage"
+          />
+          <h3>Swedish Massage</h3>
+          <p>
+            A classic gentle full-body massage to relax muscles, improve
+            circulation, and ease tension. Perfect for stress relief.
+          </p>
+        </div>
+
+        <div class="service-card" id="deep">
+          <img src="./Images/Deep tissue 2.jpg" alt="Deep Tissue Massage" />
+          <h3>Deep Tissue Massage</h3>
+          <p>
+            Targets deeper muscle layers and connective tissue to relieve
+            chronic aches, knots, and tension in stiff areas.
+          </p>
+        </div>
+
+        <div class="service-card" id="aroma">
+          <img src="./Images/Aromatherapy.jpg" alt="Aromatherapy Massage" />
+          <h3>Aromatherapy Massage</h3>
+          <p>
+            Combines essential oils with massage techniques to promote
+            relaxation and well-being through soothing scents.
+          </p>
+        </div>
+
+        <div class="service-card" id="hotstone">
+          <img src="./Images/Hot Stone.jpg" alt="Hot Stone Massage" />
+          <h3>Hot Stone Massage</h3>
+          <p>
+            Uses heated stones placed on key points to deeply relax muscles,
+            improve circulation, and ease stress.
+          </p>
+        </div>
+
+        <div class="service-card" id="hotstone">
+          <img src="/Images/hot-oil.jpg" alt="Hot Oil Massage" />
+          <h3>Hot Oil Massage</h3>
+          <p>
+            Warm oils to melt away tension and nourish the skin-sensual and
+            soothing.
+          </p>
+        </div>
+
+        <div class="service-card" id="hotstone">
+          <img src="./Images/Neck Back.jpg" alt="Shoulder Massage" />
+          <h3>Back,Neck & Shoulder Massage</h3>
+          <p>
+            Focused on upper body stress zones-ideal for quick tension relief.
+          </p>
+        </div>
+
+        <div class="service-card" id="hotstone">
+          <img
+            src="./Images/Reflexology+and+Massage.jpg"
+            alt="Foot Reflexology"
+          />
+          <h3>Foot Reflexology</h3>
+          <p>
+            Targeted pressure points to restore balance and improve energy flow
+            .
+          </p>
+        </div>
+
+        <div class="service-card" id="hotstone">
+          <img
+            src="./Images/Sensual+Touch+Massage+breast+massage.jpeg"
+            alt="Intimate Relaxation Massage"
+          />
+          <h3>Sensual/Intimate Relaxation Massage</h3>
+          <p>
+            Custom-tailored,respectful, and private-focused on full body
+            relaxation and connection.(Available for select clients only.)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="reviews">
+      <hr />
+      <h2>What Our Clients Say</h2>
+      <div class="reviews-container">
+        <div class="review-card">
+          <p>
+            "Absolutely amazing experience! The aromatherapy massage left me
+            relaxed for days."
+          </p>
+          <h4>- Emily R.</h4>
+        </div>
+        <div class="review-card">
+          <p>
+            "The deep tissue massage was exactly what I needed after my workout.
+            Highly recommend!"
+          </p>
+          <h4>- Mark S.</h4>
+        </div>
+        <div class="review-card">
+          <p>
+            "Warm, welcoming place with professional therapists. The Swedish
+            massage was perfect."
+          </p>
+          <h4>- Sophie L.</h4>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <hr />
+      <h2>Contact Us</h2>
+      <form
+        action="https://formspree.io/f/xblypnlz"
+        method="POST"
+        class="contact-left"
+      >
+        <input
+          type="text"
+          name="Name"
+          placeholder="Your Name"
+          class="contact-input"
+          required
+        />
+        <input
+          type="email"
+          name="Email"
+          placeholder="Your Email"
+          class="contact-input"
+          required
+        />
+        <textarea
+          name="message"
+          placeholder="Your Message"
+          class="contact-input"
+          required
+        ></textarea>
+        <button type="submit">Send Message</button>
+
+        <!-- <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="Your Name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email" required />
+
+        <label for="message">Message</label>
+        <textarea
+          id="message"
+          rows="5"
+          placeholder="Your Message"
+          required
+        ></textarea> -->
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 PhysicalTherapy Massage. All rights reserved.</p>
+    </footer>
+
+    <!-- <script src="navigation.js"></script> -->
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+
+    <script>
+      $(window).scroll(function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </body>
+</html>
