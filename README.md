@@ -1,1 +1,1 @@
-# Physical-Theraphy
+# PhysicalTheraphy
